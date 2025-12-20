@@ -11,6 +11,16 @@ sudo apt-get install build-essential    # Required for mojo to build
 # Otherwise building will fail with: /usr/bin/ld: cannot find Scrt1.o: No such file or directory 
 ```
 
+Make sure pixi is installed and enter the venv with
+```bash
+pixi shell
+```
+
 I ran `mojo hello_world.mojo` which behaves similar to python and performs just-in-time compilation.
 
-I can compile it into an executable with `mojo build hello_world.mojo`.
+I can compile it into an executable:
+```bash
+mojo build hello_world.mojo
+./hello_world
+```
+
